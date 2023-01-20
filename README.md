@@ -3,4 +3,4 @@
 ## 1. Grid
 ### we use float and calc to form the framework of the project include Header, Lectures, Related Books, Footer.
 
-![Alt text](/assets/readme/grid.png "Output of grid:")
+![Alt text](/assets/readme/grid2.png "Output of grid:")
