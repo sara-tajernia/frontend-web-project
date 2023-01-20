@@ -1,0 +1,64 @@
+:root{
+    --margin: 1rem;
+    --padding: 1rem;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+.container {
+    overflow: hidden; 
+}
+  
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#top, #bottom, #content {
+    text-align: center;
+    border: 2px solid #1a10ce;
+    margin: var(--margin);
+    padding: var(--padding);
+}
+  
+#top {
+    background-color: #5799e0;
+}
+  
+#content {
+    background-color: #81a5c7;
+    display: flex;
+    justify-content: center;
+    margin: var(--margin);
+    padding: var(--padding);
+}
+
+#bottom {
+    background-color: #5799e0;
+    display: flex;
+    justify-content: center;
+}
+
+.calc4{
+    width: calc(25%);
+}
+
+.calc3{
+    width: calc(33%);
+}
+
+.calc2{
+    width: calc(50%);
+}
+
+.calc2, .calc3, .calc4{
+    background-color: #1783ae;
+    margin: var(--margin);
+    padding: var(--padding);
+}
+  
