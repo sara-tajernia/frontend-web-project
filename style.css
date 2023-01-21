@@ -9,6 +9,7 @@ body, html {
     height: 100%;
     padding: 0;
     margin: 0;
+    /* background-color: rgb(36, 36, 36); */
 }
 
 
@@ -282,6 +283,7 @@ body, html {
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
     /* background-color: rgb(234, 234, 234); */
     /* border: #7c7c7c; */
+    position: relative;
 }
 
 
@@ -377,6 +379,42 @@ body, html {
     margin-bottom: 35%;
 }
 
+
+
+.books-price-title{
+    background: -webkit-linear-gradient(45deg, rgb(1, 1, 141), rgb(153, 50, 204));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.books-price{
+    border: #0f523b 1px solid;
+    width: 40%;
+    display: flex;
+    /* row */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box in center */
+    margin: 5% auto;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(1, 1, 141), rgb(153, 50, 204)) 1;
+    /* border-radius: 10%; */
+    /* margin: 0 a; */
+    /* padding: 0; */
+    
+    
+}
+
+
+.books-price-text{
+    /* color: #0f523b; */
+    font-family: 'Verdana', sans-serif;
+    font-size: 14px;
+    margin: 5%;
+    padding: 0;
+}
+
 .books-btn{
     /* background-image: url("assets/images/key.png"); */
     /* background-size: cover; */
@@ -386,9 +424,15 @@ body, html {
     /* border:none; */
     width: 30%;
     padding: 0;
+    margin: 0;
     border: none;
-    /* Background: none;  */
+    Background-color: transparent;
+    transition: transform 1.5s ease-in-out;
 }
+
+.books-btn:hover {
+    transform: rotate(720deg);
+  }
 
 /* .books-btn:focus { outline: none; } */
 
@@ -422,7 +466,7 @@ body, html {
     text-align: center;
   }
   
-  .button {
+  /* .button {
     font-size: 1em;
     padding: 10px;
     color: #fff;
@@ -434,7 +478,7 @@ body, html {
   }
   .button:hover {
     background: #06D85F;
-  }
+  } */
   
   .overlay {
     position: fixed;
@@ -572,6 +616,21 @@ body, html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  for button buy now effect 
 */
@@ -602,7 +661,7 @@ body, html {
   
   .cta:hover {
       transition: 0.5s;
-      box-shadow: 10px 10px 0 #FBC638;
+      box-shadow: 10px 10px 0 #8997f5;
   }
   
   .cta span:nth-child(2) {
@@ -659,7 +718,7 @@ body, html {
           fill: white;
       }
       50% {
-          fill: #FBC638;
+          fill: #8997f5;
       }
       100% {
           fill: white;
@@ -685,12 +744,35 @@ body, html {
 
 
 
+#fotter {
+    background-color: #84a6cb;
+    display: flex;
+    justify-content: center;
+    
+}
 
-.calc2{
+.fotter-calc2{
     width: calc(50%);
 }
 
-.calc2, .calc3, .lectures-calc4{
+
+.footer-left{
+    /* display: ; */
+    display: flex;
+    justify-content: center;
+}
+
+.fotter-left-inner{
+    margin: 0 3%;
+}
+
+.fotter-right{
+    /* display: ; */
+    display: flex;
+    justify-content: center;
+}
+
+.fotter-calc2, .lectures-calc4{
     background-color: #ffffff;
     /* opacity: 0.6; */
     margin: var(--margin);
@@ -710,11 +792,6 @@ body, html {
 
 
 
-#bottom {
-    background-color: #5799e0;
-    display: flex;
-    justify-content: center;
-}
 
 
 
