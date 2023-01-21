@@ -138,18 +138,32 @@ body, html {
 
   
 #content {
-    background-image: linear-gradient(135deg, rgba(247, 247, 251, 0.52), 
-    rgba(19, 43, 117, 0.63), rgba(68, 13, 107, 0.73)),url("assets/img/Background.jpg");
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.52), 
+    rgba(52, 80, 164, 0.53), rgba(59, 10, 94, 0.73)),url("assets/img/Background.jpg");
     overflow: auto;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 10%;
+    padding-left: 6%; 
 }
 
 .calc4{
-    width: calc(16%);
+    /* width: calc(16%); */
     float: left;
     min-height: 430px;
+    border-radius: 1%;
+
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 10px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    /* outline: calc(var(--s)/2) solid #0009; */
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.6;
+
 }
 
 .lectures-icon{
@@ -168,6 +182,51 @@ body, html {
     font-family: 'Verdana', sans-serif;
     letter-spacing: .2rem;
 }
+
+
+.calc4:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+.img1 {
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #00d7c3; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.calc4:hover, .img1:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+  
+
+  
+  
+ 
+
+
+
 
 
 
@@ -195,7 +254,7 @@ body, html {
 
 .calc2, .calc3, .calc4{
     background-color: #ffffff;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     margin: var(--margin);
     padding: var(--padding);
 }
