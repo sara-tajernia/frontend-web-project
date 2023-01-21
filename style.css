@@ -1,6 +1,6 @@
 :root{
-    --margin: 1rem;
-    --padding: 1rem;
+    --margin: 1%;
+    --padding: 1%;
 }
 
 body, html {
@@ -21,22 +21,119 @@ body, html {
 
 #top, #bottom, #content {
     text-align: center;
-    border: 2px solid #1a10ce;
     margin: var(--margin);
-    padding: var(--padding);
+    /* padding: var(--padding); */
 }
   
 #top {
-    background-color: #5799e0;
+    background-image: url("assets/img/Header.jpg");
+    background-size: cover;
+    text-align: center;
+    /* position: relative; */
 }
+
+#header-title{
+    padding-top: 14%;
+    font-size: 4rem;
+    width: 30%;
+    margin: auto;
+
+    position: relative;
+    animation: myfirst 15s 1;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {color: rgb(50, 44, 165); left: -80%; top: 0px;}
+    25%  {color: rgb(255, 255, 255); left: 0px; top: 0px;}
+  }
+
+#header-text{
+    font-size: 2rem;
+    width: 40%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.header-button{
+    background-color: #ffffff;
+    color : #6e6e6e;
+    width: 20%;
+    margin: 3% auto 10% auto;
+    padding: 1%;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Verdana', sans-serif;
+}
+
+
+.header-button {
+    background-color: #ffffff;
+    color : #6e6e6e;
+    width: 20%;
+    margin: 3% auto 10% auto;
+    padding: 1%;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-family: 'Verdana', sans-serif;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+  
+.header-button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.header-button:after {
+    content: '↓';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.header-button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+}
+  
+.header-button:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+#header-title, #header-text{
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* padding: 5%; */
+
+}
+
   
 #content {
     background-color: #81a5c7;
-    display: flex;
-    justify-content: center;
+    content: "";
+    display: table;
+    clear: both;
     margin: var(--margin);
     padding: var(--padding);
+    width: 100%;
 }
+
 
 #bottom {
     background-color: #5799e0;
@@ -45,7 +142,8 @@ body, html {
 }
 
 .calc4{
-    width: calc(25%);
+    width: calc(20%);
+    float: left;
 }
 
 .calc3{
@@ -62,4 +160,3 @@ body, html {
     padding: var(--padding);
 }
   
-
