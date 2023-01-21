@@ -24,9 +24,10 @@ body, html {
     clear: both;
 }
 
-#top, #bottom, #lectures-content, #related-books-content{
+#top, #bottom, #related-books-content{
     text-align: center;
-    margin: var(--margin);
+    /* margin: var(--margin); */
+    margin: var(--margin) var(--margin) 0 var(--margin);
     /* padding: var(--padding); */
 }
   
@@ -142,7 +143,9 @@ body, html {
 
 
   
+  
 #lectures-content {
+    margin: var(--margin) var(--margin) 0 var(--margin);
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.52), 
     rgba(52, 80, 164, 0.53), rgba(59, 10, 94, 0.73)),url("assets/img/Background.jpg");
     overflow: auto;
@@ -154,6 +157,7 @@ body, html {
 }
 
 .lectures-calc4{
+    background-color: #ffffff;
     /* width: calc(16%); */
     float: left;
     min-height: 430px;
@@ -197,6 +201,7 @@ body, html {
     opacity: 0.9;
     transform: scale(1.1);
 }
+
 
 
 
@@ -360,8 +365,20 @@ body, html {
 
 .books-title-green{
     /* border: #095d40 1px solid; */
-    background-color: #2bacbb;
-    box-shadow: #0f523b 0px 0px 10px;
+    background-color: #2bbbaf;
+    box-shadow: #12684a 0px 0px 10px;
+}
+
+.books-title-blue{
+    /* border: #095d40 1px solid; */
+    background-color: #1ec9e7;
+    box-shadow: #0f1052 0px 0px 10px;
+}
+
+.books-title-purple{
+    /* border: #095d40 1px solid; */
+    background-color: #ad55d9;
+    box-shadow: #360f52 0px 0px 10px;
 }
 
 
@@ -760,20 +777,22 @@ body, html {
     /* display: ; */
     display: flex;
     justify-content: center;
+
+    text-transform: uppercase;
+    font-size: 18px;
+    /* background-color: #44107a; */
 }
 
 .fotter-left-inner{
-    margin: 0 3%;
+    margin: 0 2%;
+    text-decoration: none;
+    color: #000000;
 }
 
-.fotter-right{
-    /* display: ; */
-    display: flex;
-    justify-content: center;
-}
+
 
 .fotter-calc2, .lectures-calc4{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* opacity: 0.6; */
     margin: var(--margin);
     padding: var(--padding);
@@ -783,6 +802,77 @@ body, html {
 
 
 
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  /* background-size: auto auto; */
+  /* background-clip: border-box; */
+  background-size: 200% auto;
+  /* color: #fff;  */
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  /* display: inline-block; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+.flipX {
+    animation: 3s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+  
+
+  .lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 
 
@@ -791,7 +881,51 @@ body, html {
 
 
 
+.fotter-right{
+    /* margin: % 0%; */
+    /* background-color: #00d7c3; */
+    /* text-decoration: none; */
+    font-size: 20px;
+    text-align: center;
+}
 
 
+.title-word {
+    animation: color-animation 5s linear infinite;
 
-
+  }
+  
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
