@@ -37,7 +37,7 @@ body, html {
 #header-title{
     padding-top: 14%;
     font-size: 4rem;
-    width: 30%;
+    width: 40%;
     margin: auto;
 
     position: relative;
@@ -55,6 +55,14 @@ body, html {
     width: 40%;
     margin: auto;
     margin-top: 3%;
+}
+
+#header-title, #header-text{
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* padding: 5%; */
+
 }
 
 .header-button{
@@ -126,24 +134,24 @@ body, html {
 
 
 
-#header-title, #header-text{
-    font-family: 'Verdana', sans-serif;
-    color: #ffffff;
-    text-transform: uppercase;
-    /* padding: 5%; */
-
-}
-
   
 #content {
-    background-color: #81a5c7;
-    content: "";
-    display: table;
-    clear: both;
-    margin: var(--margin);
-    padding: var(--padding);
-    width: 100%;
+    background-image: url("assets/img/Background.jpg");
+    overflow: auto;
 }
+
+.calc4{
+    width: calc(21%);
+    float: left;
+}
+
+
+
+
+
+
+
+
 
 
 #bottom {
@@ -152,10 +160,6 @@ body, html {
     justify-content: center;
 }
 
-.calc4{
-    width: calc(20%);
-    float: left;
-}
 
 .calc3{
     width: calc(33%);
