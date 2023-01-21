@@ -1,5 +1,5 @@
 :root{
-    --margin: 1%;
+    --margin: 2%;
     --padding: 1%;
 }
 
@@ -134,15 +134,39 @@ body, html {
 
 
 
+
+
   
 #content {
-    background-image: url("assets/img/Background.jpg");
+    background-image: linear-gradient(135deg, rgba(247, 247, 251, 0.52), 
+    rgba(19, 43, 117, 0.63), rgba(68, 13, 107, 0.73)),url("assets/img/Background.jpg");
     overflow: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
 }
 
 .calc4{
-    width: calc(21%);
+    width: calc(16%);
     float: left;
+    min-height: 430px;
+}
+
+.lectures-icon{
+    width: 50%;
+    opacity: 0.6;
+}
+
+.lectures-icon-html{
+    width: 35%;
+    opacity: 0.7;
+}
+
+.lectures-text{
+    margin: 3%;
+    opacity: 0.7;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: .2rem;
 }
 
 
@@ -170,7 +194,8 @@ body, html {
 }
 
 .calc2, .calc3, .calc4{
-    background-color: #1783ae;
+    background-color: #ffffff;
+    opacity: 0.6;
     margin: var(--margin);
     padding: var(--padding);
 }
