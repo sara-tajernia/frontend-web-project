@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Frontend Projec</title>
+  <title>Frontend Project</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/owl.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
+
+
+
+    <!-- <nav>
+      <input type = “checkbox” id = “nav-button”>
+      <label for = "nav-button">&#9776;</label>
+     <ul>
+       <li><a href = “#”>Home</a></li>
+       <li><a href = “#”>About</a></li>
+       <li><a href = “#”>Portfolio</a></li>
+       <li><a href = “#”>Blog</a></li>
+       <li><a href = “#”>Contact</a></li>
+     </ul>
+     
+    </nav> -->
+
+
+
+    <!-- <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </div> -->
+    
+
+    <!-- <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#">About</a></li>
+        <li><a class="menu__item" href="#">Team</a></li>
+        <li><a class="menu__item" href="#">Contact</a></li>
+        <li><a class="menu__item" href="#">Twitter</a></li>
+      </ul>
+    </div> -->
+
+
+
+    <!-- hamburger -->
+  <input type="checkbox" id="navi-toggle" class="checkbox" />
+  <label for="navi-toggle" class="button-nav">
+    <span class="icon">&nbsp;</span>
+  </label>
+  <div class="background">&nbsp;</div>
+
+  <!-- nav -->
+  <nav class="nav">
+    <ul class="list">
+      <li class="item"> <a class="link" href="#lectures-content"> lectures </a> </li>
+      <li class="item"> <a class="link" href="#buy-books"> Buy Books </a> </li>
+      <li class="item"> <a class="link" href="#fotter"> Fotter </a> </li>
+    </ul>
+  </nav>
+
+
+
+
+
       <header id="top">
         <div id="header-title" style="font:courier">Internet Engineering</div>
         <div id="header-text">Is what we are giong to learn in this course</div>
-        <div class="header-button button-1">See this course related books</div>
+        <!-- <div class="header-button button-1">See this course related books</div> -->
+        <a class="header-button " href="#buy-books" sc>See this course related books</a>
 
       </header>
 
@@ -47,7 +111,7 @@
 
 
       <article id="related-books-content">
-        <h1 class="related-books-title">Most Popular Books</h1>
+        <h1 class="related-books-title animate-charcter2">Most Popular Books</h1>
 
 
         
@@ -171,10 +235,10 @@
             </div>
         </div>
       </div>
+    </article>
 
 
-
-
+      <article id="buy-books">
           <div class="related-books-calc3 ">
             <div class="flip-card-inner">
               <div class="flip-card-front ">
