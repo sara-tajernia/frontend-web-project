@@ -198,15 +198,16 @@ body, html {
 
 
 
+/* hamburger */
 .checkbox {
   display: none;
 }
 
-.button-nav {
+.button {
   position: relative;
   background-color: white;
-  height: 5rem;
-  width: 5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   position: fixed;
   top: 5vh; 
@@ -224,9 +225,9 @@ body, html {
   position: fixed;
   top: 5.5vh; 
   right: 5.5vw; 
-  background-image: radial-gradient(rgb(97, 127, 195), black);
+  background-image: radial-gradient(rgb(104, 176, 223), black);
   z-index: 1000;
-  
+
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
@@ -239,7 +240,6 @@ body, html {
   opacity: 0;
   width: 0;
   transition: all 0.8s;
-  /* background-color: #065ad8; */
 }
 
 .list {
@@ -257,10 +257,10 @@ body, html {
   font-size: 36px;
 }
 
-/* .link:link,
+.link:link,
 .link:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: white;
@@ -274,23 +274,17 @@ body, html {
   );
   background-size: 220%;
   transition: all 0.4s;
-} */
-
-.link:hover {
-  color: lightgreen;
-  
 }
 
-.link:active{
+.link:hover,
+.link:active {
+  color: rgb(21, 41, 168);
   cursor: pointer;
-  /* hide nav and background */
-  transform: scale(0);
 }
 
 /* functionality */
 .checkbox:checked ~ .background {
   transform: scale(80);
-  /* background-color: #0f1052; */
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
@@ -331,14 +325,14 @@ body, html {
   top: 0.8rem;
 }
 
-/* .button:hover icon:before {
+.button:hover icon:before {
   top: -1rem;
 }
 .button:hover icon::after {
   top: 1rem;
-} */
+}
 
-/* .checkbox:checked + .button .icon {
+.checkbox:checked + .button .icon {
   background-color: transparent;
 }
 
@@ -349,7 +343,8 @@ body, html {
 .checkbox:checked + .button .icon::after {
   top: 0;
   transform: rotate(-135deg);
-} */
+}
+
 
 
 
@@ -1243,8 +1238,8 @@ body, html {
     display: flex;
     justify-content: center;
     margin: var(--margin);
-    /* padding: var(--padding); */
-    padding: 3% 0;
+    padding: var(--padding);
+    /* padding: 1% 0; */
     
 }
 
