@@ -39,4 +39,11 @@ https://user-images.githubusercontent.com/61985583/215699803-402e2c28-a516-49cc-
 https://user-images.githubusercontent.com/61985583/215700961-a8cc0cab-69c1-45f2-855d-d019c7cf0c82.mov
 
 
+## 6. Menu 
+### Add a menu part to connect to each part of the site easily.
+
+
+
+https://user-images.githubusercontent.com/61985583/215701437-43079497-c36b-4e05-9a14-c377cf482426.mov
+
 
