@@ -14,13 +14,29 @@ https://user-images.githubusercontent.com/61985583/214981014-b4b6b4d4-c0f4-4000-
 ### 4 Lectures with the explanation that has an effect while hovering.
 
 
-https://user-images.githubusercontent.com/61985583/215696089-e9525646-4f8f-40e3-a33a-28f3b631ead9.mov
+
+https://user-images.githubusercontent.com/61985583/215699127-9f04dd9c-9f25-4ef5-9460-92328fc37046.mov
+
+
+
 
 ## 4. Buy Books
 ### 3 different books and their info, return the card while hovering over the card and showing the price, and click the key button popup page to show the whole information and a button to connect to the amazon website to buy the book.
 
 
 
+
+
+https://user-images.githubusercontent.com/61985583/215699803-402e2c28-a516-49cc-815f-67bf3a2effbd.mov
+
+
+
+## 5. Fotter
+
+
+
+
+https://user-images.githubusercontent.com/61985583/215700961-a8cc0cab-69c1-45f2-855d-d019c7cf0c82.mov
 
 
 
